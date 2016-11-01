@@ -1,0 +1,486 @@
+@charset "utf-8";
+@import "reset.css";
+@import "jdheader.css";
+//定义共有的总宽度
+.com_width{
+	width:1263px;
+	font-size:12px;
+	margin:0 auto;
+}
+
+//定义通用左右边距
+.mr{
+	width:1213px;
+	margin:0px 20px 10px 30px;
+}
+
+//定义左浮
+.fl{
+	float:left;
+}
+
+//定义右浮
+.fr{
+	float:right;
+}
+
+//定义h5
+h5{
+	.mr;
+	height:30px;
+	line-height:30px;
+	margin-top:20px;
+	border-bottom:1px solid #c81623;
+	p{
+		.fl;
+		font-size:16px;
+		img{
+				margin-right:5px;
+			}
+		&:last-of-type{
+				.fr;
+				margin-right:0px;
+				//width:557px;
+				height:28px;
+				font-size:0px;
+				border:1px solid #666666;
+				border-bottom:0px;
+				a{
+					font-size:14px;
+					color:#666666;
+					padding:0px 10px;
+					border-right:1px solid #666666;
+					&:last-of-type{
+						border-right:0px;
+					}
+					&:hover{
+						color:blue;
+						padding:8px 11px;
+						margin-left:-1px;
+						border:1px solid red;
+						border-bottom:0px;
+						background-color:#fff;
+						&:last-of-type{
+						padding:8px 12px;
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+//定义b的颜色
+b{
+	color:red;
+}
+
+//设定通用dl中dt居于右下侧
+.dtyx{
+		.fl;
+		position:relative;
+		border:1px solid #ededed;
+		border-collapse:collapse;
+		dt{
+			position:absolute;
+			right:1px;
+			bottom:1px;
+		}
+		dd{
+				margin-top:10%;
+				margin-left:15%;
+				&:first-of-type{
+					font-size:16px;
+					font-weight:bold;
+					color:#000;
+				}
+				&:nth-of-type(2){
+					margin-top:5%;
+					font-size:14px;
+					font-weight:bold;
+					color:red;
+					position:relative;
+					z-index:3;
+				}
+		}
+	}
+
+//定义通用dl中图片在最下面居中
+.ddtz{
+	.fl;
+	width:100%;
+	height:100%;
+	text-align:center;
+	dt{
+		.fl;
+		width:100px;
+	}
+	dd{
+		.fl;
+		width:100px;
+	}
+}
+
+
+.fzxb{
+	.com_width;
+	height:775px;
+	//background-color:pink;
+	.tab{
+		.mr;
+		height:640px;
+		overflow:hidden;
+		#dapai{
+			height:640px;
+			border-collapse:collapse;
+			//background-color:yellow;
+			.fzlf{
+				.fl;
+				width:324px;
+				height:640px;
+				font-size:0px;
+				//background-color:green;
+				>img{
+					border:1px solid #ededed;
+				}
+				div{
+					height:120px;
+					font-size:12px;
+					border:1px solid #f9eefa;
+					background-image:linear-gradient(to bottom,#f09cf8,#f9eefa);
+					ul{
+						.fl;
+						width:110px;
+						height:100px;
+						margin:10px 10px 0px 10px;
+						li{
+							line-height:25px;
+							a{
+								margin-right:5px;
+							}
+						}
+						&:first-of-type{
+							margin-left:45px;
+						}
+					}
+				}
+				dl{
+					.dtyx;
+					width:322px;
+					height:170px;
+					background-color:#f9f7f8;
+					border:1px solid #ededed;
+				}
+			}
+			.fzct{
+				.fl;
+				width:438px;
+				height:640px;
+				//background-color:gray;
+				dl{
+					.dtyx;
+					border:1px solid #ededed;
+					&:first-of-type{
+						.fl;
+						width:438px;
+						height:158px;
+						//background-color:yellow;
+					}
+					&:nth-of-type(2){
+						.fl;
+						width:438px;
+						height:316px;
+						position:relative;
+					//	background-color:blue;
+						dd{
+							&:nth-of-type(2){
+								position:relative;
+								z-index:3;
+							}
+						}
+					}
+					&:last-of-type{
+						.fl;
+						width:438px;
+						height:157px;
+						//background-color:yellow;
+					}
+				}
+			}
+			.fzrt{
+				.fl;
+				width:438px;
+				height:640px;
+				//	background-color:green;
+				dl{
+					.fl;
+					.dtyx;
+					width:215px;
+					height:157px;
+					border:1px solid #ededed;
+					border-collapse:collapse;
+					background-color:#f9f9f9;
+					&:nth-of-type(6){
+						width:215px;
+						height:314px;
+					}
+					&:nth-of-type(7){
+						margin-top:-160px;
+					}
+				}
+			}
+		}
+		#nanzhuang{
+			height:640px;
+			line-height:640px;
+			background-color:yellow;
+			text-align:center;
+			font-size:36px;
+			color:red;
+		}
+		#nvzhuang{
+			height:640px;
+			line-height:640px;
+			background-color:green;
+			text-align:center;
+			font-size:36px;
+			color:white;
+		}
+	}
+	>img{	
+			.mr;
+			margin-top:10px;
+	}
+}
+
+.mrhz{
+	.com_width;
+	height:735px;
+	//background-color:pink;
+	.tab1{
+		.mr;
+		height:480px;
+		overflow:hidden;
+		#rd{
+			height:480px;
+			.mzlt{
+				.fl;
+				width:201px;
+				font-size:0px;
+				//background-color:green;
+				>img{
+					border:1px solid #ededed;
+				}
+				div{
+					height:147px;
+					font-size:12px;
+					border:1px solid #f9eefa;
+					background-image:linear-gradient(to bottom,#f09cf8,#f9eefa);
+					ul{
+					
+						width:203px;
+						height:147px;
+						margin:10px 10px 0px 10px;
+						li{
+							line-height:25px;
+							a{
+								margin-right:5px;
+							}
+						}
+						
+					}
+				}
+			}
+			.mzct{
+				.fl;
+				width:346px;
+				height:480px;
+				dl{
+					.fl;
+					.dtyx;
+					width:346px;
+					height:234px;
+				}
+			}
+			.mzrt{
+				.fl;
+				width:660px;
+				height:480px;
+				dl{
+					.fl;
+					.dtyx;
+					width:217px;
+					height:295px;
+					
+					&:nth-of-type(4){
+						height:172px;
+					}
+					&:nth-of-type(5){
+						height:172px;
+					}
+					&:nth-of-type(6){
+						height:172px;
+					}
+				}
+			}
+		}
+		#gjpp{
+			height:480px;
+			line-height:480px;
+			background-color:green;
+			text-align:center;
+			font-size:36px;
+			color:white;
+		}
+		#gzmp{
+			height:480px;
+			line-height:480px;
+			background-color:yellow;
+			text-align:center;
+			font-size:36px;
+			color:red;
+		}
+	}
+	>img{
+		.mr;
+		margin-top:10px;
+	}	
+}
+
+.sjtx{
+	.com_width;
+	height:600px;
+	//background-color:pink;
+	.tab2{
+		.mr;
+		height:475px;
+		overflow:hidden;
+		#rm{
+			.sjtxlt{
+				.fl;
+				width:325px;
+				height:475px;
+			//	background-color:yellow;
+				dl{
+					width:325px;
+					height:235px;
+					.dtyx;
+					background-color:#d8d3ab;
+				}
+				h4{	width:325px;
+					height:45px;
+					line-height:45px;
+					display:inline-block;
+					border:1px solid #ebe8d4;
+					background-color:#ebe8d4;
+
+						img{
+						display:inline-block;
+						margin-right:5px;
+						margin-left:20px;
+						vertical-align:middle;
+						}
+					}
+					ul{	
+						width:325px;
+						height:180px;
+						padding-top:10px;
+						background-color:#f3f1e5;
+						li{
+							.fl;
+							height:25px;
+							line-height:25px;
+							width:140px;
+							color:#999999;
+							&:nth-of-type(odd){
+							margin-left:40px;
+							}
+							&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4){
+							font-weight:bold;
+							color:#000;
+							}
+						}
+					}	
+				
+			}
+			.sjtxct{
+				.fl;
+				width:440px;
+				height:475px;
+				position:relative;
+				//background-color:gray;
+				dl{
+					.fl;
+					.dtyx;
+					height:234px;
+					width:216px;
+					&:first-of-type{
+						width:438px;
+						background-color:#eaeaea;
+					}
+				}
+				div{
+					width:200px;
+					height:100px;
+					position:absolute;
+					top:200px;
+					left:150px;
+					span{
+						display: inline-block;
+						width: 10px;
+						height: 10px;
+						line-height:10px;
+						text-align:center;
+						font-size:12px;
+						//border:1px solid red; 
+						border-radius: 5px;
+						margin: 6px;
+						background-color:red;
+						&:hover{
+							background-color:#2cd10b;
+						}
+					}
+				}
+			}
+			.sjtxrt{
+				.fl;
+				width:440px;
+				height:475px;
+				//background-color:orange;
+				dl{
+					.fl;
+					.dtyx;
+					width:216px;
+					height:115px;
+					&:nth-of-type(5),&:nth-of-type(6){
+					height:234px;
+					}
+
+				}
+			}
+		}
+	}
+	>img{
+		.mr;
+		margin-top:10px;
+	}	
+	&:nth-of-type(2),&:nth-of-type(3){
+		.tab2{
+			#rm{
+				.sjtxlt{
+					dl{
+						background-color:#b2c7dc;
+					}
+					h4{
+						background-color:#dee7f0;
+					}
+					ul{
+						background-color:#e6edf3;
+					}
+				}
+			}
+
+		}
+	}
+}
+
