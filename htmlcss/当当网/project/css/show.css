@@ -1,0 +1,33 @@
+@charset "utf-8";
+#header{width: 960px;height: 250px;display: block;border: none;margin: 0 auto;}
+#fot{width: 960px;height: 80px;display: block;border: none;margin: 0 auto;}
+#show{width: 960px;height: 1110px;margin: 0 auto;/*border:1px solid #a1a1a1;*//*border-top:1px;*/ }
+#show p{font-size: 12px;margin-left: 10px;line-height: 30px;}
+.showleft{width: 180px;height: 290px;/*background-color: pink;*/float: left;margin-right: 3px;}
+.showleft h2{width: 163px;height: 30px;line-height: 30px;background-color: #ea7604;color: #fff;border:1px solid #d3d3d3;padding-left: 15px;}
+.showleft div{width: 178px;height:240px;border:1px solid #d3d3d3;margin-top: 10px;}
+
+
+
+.showright{width: 773px;height: 1085px;/*background-color: yellow;*/float: left;border:1px solid #a1a1a1;}
+.showright h3{width: 773px;height: 30px;border:1px solid #a1a1a1;font-weight: normal;background-color: #f9d8a9;}
+.showright h3 img{display: inline-block;vertical-align: middle;}
+.showright h3 p:first-of-type{float: left;}
+.showright h3 p:last-of-type{float: right;margin-right: 15px;}
+.showright h3 p input{width: 35px;height: 25px;border:1px solid #a1a1a1;background-color:transparent;}
+.showright h3 p input:hover{background-color:#ff9966;}
+.showright div {width: 773px;padding: 10px;}
+.showright div dl{width: 748px;height: 194px;margin-top: 15px 10px 0px 10px;border-bottom:1px solid #666666;font-size: 14px;line-height: 20px;float: left;}
+.showright div dl dt{width: 90px;height: 190px;float: left;margin-top: 20px;margin-right:15px;margin-left: 10px;}
+.showright div dd{width: 620px;margin-left: 110px;}
+.showright div dl dd img{display: inline-block;vertical-align: middle;}
+.showright div dl dd span{color: #1965c4;}
+.showright div dl dd strong{color: red;}
+.showright div dl dd b{text-decoration: line-through;}
+.showright div dl dd:first-of-type{color: #1965c4;border-bottom:1px dashed  #666666;margin-top: 10px;}
+.showright div dl dd:nth-of-type(6){width: 620px;height: 40px;overflow: hidden;word-spacing: nowrap;text-overflow:ellipsis; }
+.showright div dl dd:last-of-type{text-align: right;}
+.showright h4{text-align: right;margin-right: 25px;}
+.showright h4 img{display: inline-block;vertical-align: middle;}
+.showright h4 input{width: 20px;height: 20px;}
+.showright h4 a{font-size: 12px;color: #000;background-color: orange;padding: 5px;}

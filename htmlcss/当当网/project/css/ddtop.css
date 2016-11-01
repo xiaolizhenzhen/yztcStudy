@@ -1,0 +1,26 @@
+@charset "utf-8";
+		#top{width: 960px;height: 150px;margin: 0 auto;text-align: center;}
+		h6{width: 940px;height:24px;line-height:24px;border:1px solid #999999;background-image: linear-gradient(to bottom,#fefefe,#f3f3f3);padding: 0px 10px;font-size: 0px;font-weight: normal;margin-bottom: 15px;}
+		p a{padding: 0px 5px;border-right: 1px solid #342334;}
+		p a:last-of-type{border-right: 0px;}
+		h6 p:first-of-type{float: left;font-size: 12px;}
+		h6 p:last-of-type{float:right;font-size: 12px;}
+		h6 p:last-of-type img{display: inline-block;vertical-align: middle;}
+		h5 {width: 960px;height:48px;display: inline-block;font-size: 0px;vertical-align: bottom;}
+		h5 img{display: inline-block;padding-right: 5px;float: left;vertical-align: bottom;}
+		h5 p{background-color:#f6f6f6;border:1px solid #a1a1a1;border-radius: 3px;display: inline-block;float: left;height: 27px; line-height: 27px;font-size: 12px;margin-top: 20px;}
+		h5 span{/*margin-right:10px;*/font-size: 12px;margin-top: 25px;float:right;}
+		h5 span>a{padding: 10px 6px 5px 6px;margin-right:5px;background-color: #ffebca;color: #9b2b0f;border:1px solid #c08f66;border-radius: 5px 5px 0px 0px;  }
+		h4 {width: 960px;height:27px;line-height: 27px;background-image: linear-gradient(to bottom,#fd7902,#ff902d);text-align: center;border:1px solid ##fd7902;border-radius:3px;}
+		h4 a{padding: 0px 5px;border-right: 1px solid #fff;font-size:12px; color: #fff;}
+		h4 a:hover{color: blue;}
+		h4 a:last-of-type{border-right: 0px;}
+
+		h3{width: 960px;height: 33px;line-height: 33px;background-image:linear-gradient(to bottom,#fff,#e8e8e8);border:1px solid #d1d1d1;border-radius: 3px;display: inline-block;margin-top: 3px;}
+		h3 form{display: inline-block;margin-left: 25px;float: left;}
+		h3 form input[type="text"]{width: 205px;height: 23px;border:1px solid #d1d1d1;border-radius: 3px;}
+		h3 form input[type="button"]{width:95px;height: 23px;border:1px solid #323a40;border-radius: 3px;}
+		h3 p{height: 33px;float: left;}
+		h3 p a{font-size: 12px;padding: 0px 8px;}
+		h3 p a img{display: inline-block;margin-right: 8px;vertical-align: middle;}
+		h2{width: 960px;height:65px;margin-bottom: 10px; }
