@@ -1,0 +1,1466 @@
+@import "reset.css";
+@import "reset.css";
+@import "reset.css";
+@import "jdheader.css";
+@charset "utf-8";
+.com_width {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+}
+.mr {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.circle {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #3e3e3e;
+  color: #fff;
+  border: 1px;
+  border-radius: 8px;
+  margin-right: 3px;
+}
+#logo {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+  height: 175px;
+}
+#logo h6 {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+  height: 30px;
+  font-size: 0px;
+  background-color: #f1f1f1;
+}
+#logo h6 p {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+}
+#logo h6 p select {
+  display: inline;
+}
+#logo h6 p:first-of-type {
+  float: left;
+  margin-left: 40px;
+}
+#logo h6 p:last-of-type {
+  float: right;
+  margin-left: 40px;
+}
+#logo h6 p a {
+  padding: 0px 10px;
+  border-right: 1px solid #dddddd;
+}
+#logo h6 p a:last-of-type {
+  border-right: 0px;
+}
+#logo .logo {
+  height: 100px;
+  line-height: 100px;
+}
+#logo .logo > img {
+  float: left;
+  margin-left: 30px;
+}
+#logo .logo h4 {
+  float: left;
+  width: 545px;
+  height: 70px;
+  margin-left: 110px;
+  display: inline-block;
+}
+#logo .logo h4 input[type="text"] {
+  width: 455px;
+  height: 30px;
+  border: 2px solid #b61d1d;
+  vertical-align: middle;
+}
+#logo .logo h4 input[type="button"] {
+  width: 80px;
+  height: 34px;
+  margin-left: -8px;
+  background-color: #b61d1d;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 16px;
+}
+#logo .logo h4 p {
+  margin-top: -20px;
+  line-height: 20px;
+}
+#logo .logo h4 p a {
+  padding-right: 5px;
+}
+#logo .logo h3 {
+  float: right;
+  width: 150px;
+  height: 35px;
+  line-height: 35px;
+  margin-right: 85px;
+  margin-top: 40px;
+  display: inline-block;
+  border: 1px solid #dfdfdf;
+  background-color: #f9f9f9;
+}
+#logo .logo h3 img:first-of-type {
+  margin-left: 10px;
+}
+#logo .logo h3 img:nth(2)-of-type {
+  margin-top: -8px;
+}
+#logo .nav {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+  height: 45px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  border-bottom: 2px solid #b1191a;
+}
+#logo .nav h5 {
+  float: left;
+  width: 190px;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 20px;
+  margin-left: 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #b1191a;
+  display: inline-block;
+}
+#logo .nav P {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+}
+#logo .nav P a {
+  padding: 0px 20px;
+}
+#logo .nav img {
+  float: right;
+  margin: 10px 35px 0px 0px;
+}
+#banner {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+  height: 660px;
+}
+#banner .bntop {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  height: 480px;
+  display: inline-block;
+}
+#banner .bntop ul {
+  float: left;
+  width: 210px;
+  background-color: #c81623;
+}
+#banner .bntop ul li {
+  width: 188px;
+  height: 29px;
+  line-height: 29px;
+  padding-left: 20px;
+  position: relative;
+  border: 1px solid #f06d77;
+  background: url(../images/banner/jdr_bg.png) no-repeat right center;
+}
+#banner .bntop ul li a {
+  color: #fff;
+}
+#banner .bntop ul:hover .hd {
+  display: block;
+}
+#banner .bntop .hd {
+  display: none;
+  width: 500px;
+  height: 470px;
+  line-height: 470px;
+  text-align: center;
+  font-size: 80px;
+  color: yellow;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  left: 210px;
+  z-index: 5;
+  opacity: 0.3;
+}
+#banner .bntop .bnpic {
+  float: left;
+  width: 747px;
+  height: 470px;
+  display: inline-block;
+  position: relative;
+}
+#banner .bntop .bnpic img {
+  margin: 15px 10px 0px 10px;
+}
+#banner .bntop .bnpic div {
+  width: 150px;
+  height: 25px;
+  position: absolute;
+  bottom: 20px;
+  left: 305px;
+}
+#banner .bntop .bnpic div b {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #3e3e3e;
+  color: #fff;
+  border: 1px;
+  border-radius: 8px;
+  margin-right: 3px;
+}
+#banner .bntop .bnpic div b:hover {
+  background-color: #b61b1f;
+}
+#banner .bntop .bnrt {
+  float: left;
+  width: 250px;
+  height: 455px;
+  margin-top: 15px;
+  border: 1px solid #e4e4e4;
+}
+#banner .bntop .bnrt h5 {
+  width: 235px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 15px;
+  border-bottom: 1px dashed #e4e4e4;
+}
+#banner .bntop .bnrt h5 a {
+  float: right;
+  font-size: 12px;
+  margin-right: 15px;
+}
+#banner .bntop .bnrt h5:last-of-type {
+  border-top: 1px dashed #e4e4e4;
+}
+#banner .bntop .bnrt p {
+  height: 30px;
+  line-height: 30px;
+  margin-left: 15px;
+}
+#banner .bntop .bnrt p:first-of-type {
+  margin-top: 10px;
+}
+#banner .bntop .bnrt p:last-of-type {
+  margin-bottom: 10px;
+}
+#banner .bntop .bnrt .tab {
+  width: 250px;
+  height: 170px;
+}
+#banner .bntop .bnrt .tab ol {
+  width: 250px;
+  height: 30px;
+  text-align: center;
+}
+#banner .bntop .bnrt .tab ol li {
+  float: left;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #e8e8e7;
+}
+#banner .bntop .bnrt .tab ol li:hover {
+  border-top-color: #c81623;
+  border-bottom: 0px;
+}
+#banner .bntop .bnrt .tab .tab22 {
+  width: 250px;
+  height: 140px;
+  margin-top: -7px;
+  overflow: hidden;
+}
+#banner .bntop .bnrt .tab .tab22 #hf {
+  width: 250px;
+  height: 140px;
+}
+#banner .bntop .bnrt .tab .tab22 #hf p {
+  height: 25px;
+  line-height: 25px;
+}
+#banner .bntop .bnrt .tab .tab22 #hf p a {
+  margin-right: 5px;
+}
+#banner .bntop .bnrt .tab .tab22 #hf p a:hover {
+  background-color: #c81623;
+}
+#banner .bntop .bnrt .tab .tab22 #hf .tab11 {
+  width: 250px;
+  height: 100px;
+  overflow: hidden;
+}
+#banner .bntop .bnrt .tab .tab22 #hf .tab11 #hfcz {
+  width: 250px;
+  height: 100px;
+}
+#banner .bntop .bnrt .tab .tab22 #hf .tab11 #hfcz p input[type="text"] {
+  width: 110px;
+  height: 23px;
+  border: 1px solid #e8e8e7;
+}
+#banner .bntop .bnrt .tab .tab22 #hf .tab11 #hfcz p select {
+  width: 112px;
+  height: 23px;
+  border: 1px solid #e8e8e7;
+}
+#banner .bntop .bnrt .tab .tab22 #hf .tab11 #hfcz p input[type="button"] {
+  width: 67px;
+  height: 26px;
+  color: #fff;
+  background-color: #c81623;
+}
+#banner .bntop .bnrt .tab .tab22 #hf .tab11 #llcz {
+  width: 250px;
+  height: 100px;
+  background-color: yellow;
+}
+#banner .bntop .bnrt .tab .tab22 #jp {
+  width: 250px;
+  height: 140px;
+  background-color: green;
+}
+#banner .bntop .bnrt .tab .tab22 #jp p {
+  text-align: center;
+  line-height: 120px;
+}
+#banner .bntop .bnrt .tab .tab22 #dyp {
+  width: 250px;
+  height: 140px;
+  background-color: yellow;
+}
+#banner .bntop .bnrt .tab .tab22 #dyp p {
+  text-align: center;
+  line-height: 120px;
+}
+#banner .bntop .bnrt .tab .tab22 #yx {
+  width: 250px;
+  height: 140px;
+  background-color: blue;
+}
+#banner .bntop .bnrt .tab .tab22 #yx p {
+  text-align: center;
+  line-height: 120px;
+}
+#banner .bntop .bnrt .tab p em {
+  color: #fff;
+  background-color: #c81623;
+  margin-right: 5px;
+}
+#banner .bntop .bnrt .tab p a {
+  color: #005ea7;
+}
+#banner .bnbot {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  height: 170px;
+  background-color: #eeeeee;
+  display: inline-block;
+}
+#banner .bnbot > img {
+  float: left;
+  margin-right: 8px;
+  margin-top: 10px;
+}
+#banner .bnbot dl {
+  float: left;
+  width: 240px;
+  height: 170px;
+  margin-right: 8px;
+  margin-top: -5px;
+  position: relative;
+}
+#banner .bnbot dl dt {
+  clear: both;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+#banner .bnbot dl dd {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+#banner .bnbot dl dd:first-of-type {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+#banner .bnbot dl dd:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ed52b8;
+}
+#banner .bnbot dl dd:nth-of-type(3) {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #7a7a7a;
+}
+#banner .bnbot dl dd:nth-of-type(4) {
+  font-size: 12px;
+  font-weight: bold;
+}
+#banner .bnbot dl dd:nth-of-type(4) b {
+  padding: 3px 5px;
+  color: #fff;
+  background-color: #dc4451;
+  border-radius: 0px 8px 8px 0px;
+}
+#banner .bnbot dl:nth-of-type(2) dd:nth-of-type(2) {
+  background-color: #fd5e40;
+}
+#banner .bnbot dl:nth-of-type(3) dd:nth-of-type(2) {
+  background-color: #e04e51;
+}
+#banner .bnbot dl:nth-of-type(3) dd:nth-of-type(4) b {
+  background-color: #e04e51;
+}
+#banner .bnbot dl:nth-of-type(4) dd:nth-of-type(2) {
+  background-color: #00ccdf;
+}
+#banner .bnbot dl:nth-of-type(4) dd:nth-of-type(4) b {
+  background-color: #00ccdf;
+}
+#cnxh {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+  height: 280px;
+  margin-bottom: 10px;
+}
+#cnxh h5 {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+}
+#cnxh h5 p {
+  float: left;
+  margin: 10px 10px 0px 20px;
+}
+#cnxh h5 p img {
+  display: inline-block;
+  vertical-align: middel;
+}
+#cnxh h5 p:last-of-type {
+  float: left;
+  margin-left: 800px;
+  display: inline-block;
+}
+#cnxh .xihuan {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  height: 255px;
+  border: 1px solid #ededed;
+}
+#cnxh .xihuan dl {
+  float: left;
+  width: 190px;
+  height: 190px;
+  margin-right: 10px;
+  padding: 20px;
+}
+#cnxh .xihuan dl:first-of-type {
+  margin-left: 10px;
+}
+#cnxh .xihuan dl dt {
+  text-align: center;
+}
+#cnxh .xihuan dl dd {
+  width: 190px;
+  margin-top: 10px;
+  margin-left: -10px;
+  line-height: 20px;
+}
+#cnxh .xihuan dl dd a {
+  font-size: 14px;
+}
+#cnxh .xihuan dl dd:first-of-type {
+  padding-right: 30px;
+  border-right: 1px solid #e6e6e6;
+}
+#cnxh .xihuan dl:last-of-type dd {
+  border-right: 0px;
+}
+#jdtsg {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+  height: 620px;
+}
+#jdtsg h5 {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#jdtsg .jdtsg {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  height: 400px;
+  font-size: 0px;
+}
+#jdtsg .jdtsg dl {
+  float: left;
+  width: 204px;
+  height: 199px;
+  text-align: center;
+  margin-top: -12px;
+  font-size: 12px;
+  border: 1px solid #ededed;
+  border-collapse: collapse;
+}
+#jdtsg .jdtsg dl dt {
+  text-align: center;
+}
+#jdtsg .jdtsg dl dd {
+  margin: 5px 0px 0px -5px;
+  text-align: center;
+  font-size: 14px;
+}
+#jdtsg .jdtsg dl dd:first-of-type a {
+  color: #c81623;
+}
+#jdtsg .jdtsg dl:first-of-type {
+  background-color: #f7f7f7;
+}
+#jdtsg .jdtsg dl:nth-of-type(2) {
+  width: 408px;
+  background-color: #c3ddf8;
+}
+#jdtsg .jdtsg dl:nth-of-type(2) dt {
+  float: right;
+  margin-top: 10px;
+  width: 205px;
+}
+#jdtsg .jdtsg dl:nth-of-type(2) dd {
+  line-height: 25px;
+}
+#jdtsg .jdtsg dl:nth-of-type(2) dd:first-of-type {
+  margin-top: 50px;
+  font-size: 20px;
+}
+#jdtsg .jdtsg dl:nth-of-type(2) dd:first-of-type a {
+  color: #000;
+}
+#jdtsg .jdtsg dl:nth-of-type(2) dd:nth-of-type(2) {
+  font-size: 16px;
+}
+#jdtsg .jdtsg dl:nth-of-type(2) dd:nth-of-type(2) a {
+  color: #333333;
+}
+#jdtsg .jdtsg dl:nth-of-type(2) dd:last-of-type a {
+  color: #fff;
+  background-color: #e7004d;
+  padding: 5px 25px;
+  font-size: 18px;
+}
+#jdtsg .jdtsg dl:nth-of-type(5) {
+  width: 175px;
+}
+#jdtsg .jdtsg dl:nth-of-type(6) {
+  background-color: #f7f7f7;
+}
+#jdtsg .jdtsg dl:nth-of-type(7) {
+  background-color: #f7f7f7;
+}
+#jdtsg .jdtsg dl:nth-of-type(8) {
+  width: 202px;
+  background-color: #f7f7f7;
+}
+#jdtsg .jdtsg dl:nth-of-type(8) dd {
+  float: left;
+  width: 95px;
+  height: 34px;
+}
+#jdtsg .jdtsg dl:last-of-type {
+  width: 382px;
+}
+#jdtsg .jdtsg dl:last-of-type dd:nth-of-type(2) img {
+  float: left;
+  margin-left: 20px;
+  border-right: 1px dashed #ededed;
+}
+#jdtsg .jdtsg dl:last-of-type dd:nth-of-type(2) p {
+  float: left;
+  text-align: left;
+  line-height: 20px;
+  margin: 20px 0px 0px 10px;
+}
+#jdtsg > img {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  display: block;
+}
+.com_width {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+}
+.mr {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+h5 {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 20px;
+  border-bottom: 1px solid #c81623;
+}
+h5 p {
+  float: left;
+  font-size: 16px;
+}
+h5 p img {
+  margin-right: 5px;
+}
+h5 p:last-of-type {
+  float: right;
+  margin-right: 0px;
+  height: 28px;
+  font-size: 0px;
+  border: 1px solid #666666;
+  border-bottom: 0px;
+}
+h5 p:last-of-type a {
+  font-size: 14px;
+  color: #666666;
+  padding: 0px 10px;
+  border-right: 1px solid #666666;
+}
+h5 p:last-of-type a:last-of-type {
+  border-right: 0px;
+}
+h5 p:last-of-type a:hover {
+  color: blue;
+  padding: 8px 11px;
+  margin-left: -1px;
+  border: 1px solid red;
+  border-bottom: 0px;
+  background-color: #fff;
+}
+h5 p:last-of-type a:hover:last-of-type {
+  padding: 8px 12px;
+}
+b {
+  color: red;
+}
+.dtyx {
+  float: left;
+  position: relative;
+  border: 1px solid #ededed;
+  border-collapse: collapse;
+}
+.dtyx dt {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+}
+.dtyx dd {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.dtyx dd:first-of-type {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.dtyx dd:nth-of-type(2) {
+  margin-top: 5%;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  position: relative;
+  z-index: 3;
+}
+.ddtz {
+  float: left;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.ddtz dt {
+  float: left;
+  width: 100px;
+}
+.ddtz dd {
+  float: left;
+  width: 100px;
+}
+.fzxb {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+  height: 775px;
+}
+.fzxb .tab {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  height: 640px;
+  overflow: hidden;
+}
+.fzxb .tab #dapai {
+  height: 640px;
+  border-collapse: collapse;
+}
+.fzxb .tab #dapai .fzlf {
+  float: left;
+  width: 324px;
+  height: 640px;
+  font-size: 0px;
+}
+.fzxb .tab #dapai .fzlf > img {
+  border: 1px solid #ededed;
+}
+.fzxb .tab #dapai .fzlf div {
+  height: 120px;
+  font-size: 12px;
+  border: 1px solid #f9eefa;
+  background-image: linear-gradient(to bottom, #f09cf8, #f9eefa);
+}
+.fzxb .tab #dapai .fzlf div ul {
+  float: left;
+  width: 110px;
+  height: 100px;
+  margin: 10px 10px 0px 10px;
+}
+.fzxb .tab #dapai .fzlf div ul li {
+  line-height: 25px;
+}
+.fzxb .tab #dapai .fzlf div ul li a {
+  margin-right: 5px;
+}
+.fzxb .tab #dapai .fzlf div ul:first-of-type {
+  margin-left: 45px;
+}
+.fzxb .tab #dapai .fzlf dl {
+  float: left;
+  position: relative;
+  border-collapse: collapse;
+  width: 322px;
+  height: 170px;
+  background-color: #f9f7f8;
+  border: 1px solid #ededed;
+}
+.fzxb .tab #dapai .fzlf dl dt {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+}
+.fzxb .tab #dapai .fzlf dl dd {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.fzxb .tab #dapai .fzlf dl dd:first-of-type {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.fzxb .tab #dapai .fzlf dl dd:nth-of-type(2) {
+  margin-top: 5%;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  position: relative;
+  z-index: 3;
+}
+.fzxb .tab #dapai .fzct {
+  float: left;
+  width: 438px;
+  height: 640px;
+}
+.fzxb .tab #dapai .fzct dl {
+  float: left;
+  position: relative;
+  border-collapse: collapse;
+  border: 1px solid #ededed;
+}
+.fzxb .tab #dapai .fzct dl dt {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+}
+.fzxb .tab #dapai .fzct dl dd {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.fzxb .tab #dapai .fzct dl dd:first-of-type {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.fzxb .tab #dapai .fzct dl dd:nth-of-type(2) {
+  margin-top: 5%;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  position: relative;
+  z-index: 3;
+}
+.fzxb .tab #dapai .fzct dl:first-of-type {
+  float: left;
+  width: 438px;
+  height: 158px;
+}
+.fzxb .tab #dapai .fzct dl:nth-of-type(2) {
+  float: left;
+  width: 438px;
+  height: 316px;
+  position: relative;
+}
+.fzxb .tab #dapai .fzct dl:nth-of-type(2) dd:nth-of-type(2) {
+  position: relative;
+  z-index: 3;
+}
+.fzxb .tab #dapai .fzct dl:last-of-type {
+  float: left;
+  width: 438px;
+  height: 157px;
+}
+.fzxb .tab #dapai .fzrt {
+  float: left;
+  width: 438px;
+  height: 640px;
+}
+.fzxb .tab #dapai .fzrt dl {
+  float: left;
+  position: relative;
+  width: 215px;
+  height: 157px;
+  border: 1px solid #ededed;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+}
+.fzxb .tab #dapai .fzrt dl dt {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+}
+.fzxb .tab #dapai .fzrt dl dd {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.fzxb .tab #dapai .fzrt dl dd:first-of-type {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.fzxb .tab #dapai .fzrt dl dd:nth-of-type(2) {
+  margin-top: 5%;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  position: relative;
+  z-index: 3;
+}
+.fzxb .tab #dapai .fzrt dl:nth-of-type(6) {
+  width: 215px;
+  height: 314px;
+}
+.fzxb .tab #dapai .fzrt dl:nth-of-type(7) {
+  margin-top: -160px;
+}
+.fzxb .tab #nanzhuang {
+  height: 640px;
+  line-height: 640px;
+  background-color: yellow;
+  text-align: center;
+  font-size: 36px;
+  color: red;
+}
+.fzxb .tab #nvzhuang {
+  height: 640px;
+  line-height: 640px;
+  background-color: green;
+  text-align: center;
+  font-size: 36px;
+  color: white;
+}
+.fzxb > img {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  margin-top: 10px;
+}
+.mrhz {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+  height: 735px;
+}
+.mrhz .tab1 {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  height: 480px;
+  overflow: hidden;
+}
+.mrhz .tab1 #rd {
+  height: 480px;
+}
+.mrhz .tab1 #rd .mzlt {
+  float: left;
+  width: 201px;
+  font-size: 0px;
+}
+.mrhz .tab1 #rd .mzlt > img {
+  border: 1px solid #ededed;
+}
+.mrhz .tab1 #rd .mzlt div {
+  height: 147px;
+  font-size: 12px;
+  border: 1px solid #f9eefa;
+  background-image: linear-gradient(to bottom, #f09cf8, #f9eefa);
+}
+.mrhz .tab1 #rd .mzlt div ul {
+  width: 203px;
+  height: 147px;
+  margin: 10px 10px 0px 10px;
+}
+.mrhz .tab1 #rd .mzlt div ul li {
+  line-height: 25px;
+}
+.mrhz .tab1 #rd .mzlt div ul li a {
+  margin-right: 5px;
+}
+.mrhz .tab1 #rd .mzct {
+  float: left;
+  width: 346px;
+  height: 480px;
+}
+.mrhz .tab1 #rd .mzct dl {
+  float: left;
+  position: relative;
+  border: 1px solid #ededed;
+  border-collapse: collapse;
+  width: 346px;
+  height: 234px;
+}
+.mrhz .tab1 #rd .mzct dl dt {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+}
+.mrhz .tab1 #rd .mzct dl dd {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.mrhz .tab1 #rd .mzct dl dd:first-of-type {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.mrhz .tab1 #rd .mzct dl dd:nth-of-type(2) {
+  margin-top: 5%;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  position: relative;
+  z-index: 3;
+}
+.mrhz .tab1 #rd .mzrt {
+  float: left;
+  width: 660px;
+  height: 480px;
+}
+.mrhz .tab1 #rd .mzrt dl {
+  float: left;
+  position: relative;
+  border: 1px solid #ededed;
+  border-collapse: collapse;
+  width: 217px;
+  height: 295px;
+}
+.mrhz .tab1 #rd .mzrt dl dt {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+}
+.mrhz .tab1 #rd .mzrt dl dd {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.mrhz .tab1 #rd .mzrt dl dd:first-of-type {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.mrhz .tab1 #rd .mzrt dl dd:nth-of-type(2) {
+  margin-top: 5%;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  position: relative;
+  z-index: 3;
+}
+.mrhz .tab1 #rd .mzrt dl:nth-of-type(4) {
+  height: 172px;
+}
+.mrhz .tab1 #rd .mzrt dl:nth-of-type(5) {
+  height: 172px;
+}
+.mrhz .tab1 #rd .mzrt dl:nth-of-type(6) {
+  height: 172px;
+}
+.mrhz .tab1 #gjpp {
+  height: 480px;
+  line-height: 480px;
+  background-color: green;
+  text-align: center;
+  font-size: 36px;
+  color: white;
+}
+.mrhz .tab1 #gzmp {
+  height: 480px;
+  line-height: 480px;
+  background-color: yellow;
+  text-align: center;
+  font-size: 36px;
+  color: red;
+}
+.mrhz > img {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  margin-top: 10px;
+}
+.sjtx {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+  height: 600px;
+}
+.sjtx .tab2 {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  height: 475px;
+  overflow: hidden;
+}
+.sjtx .tab2 #rm .sjtxlt {
+  float: left;
+  width: 325px;
+  height: 475px;
+}
+.sjtx .tab2 #rm .sjtxlt dl {
+  width: 325px;
+  height: 235px;
+  float: left;
+  position: relative;
+  border: 1px solid #ededed;
+  border-collapse: collapse;
+  background-color: #d8d3ab;
+}
+.sjtx .tab2 #rm .sjtxlt dl dt {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+}
+.sjtx .tab2 #rm .sjtxlt dl dd {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.sjtx .tab2 #rm .sjtxlt dl dd:first-of-type {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.sjtx .tab2 #rm .sjtxlt dl dd:nth-of-type(2) {
+  margin-top: 5%;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  position: relative;
+  z-index: 3;
+}
+.sjtx .tab2 #rm .sjtxlt h4 {
+  width: 325px;
+  height: 45px;
+  line-height: 45px;
+  display: inline-block;
+  border: 1px solid #ebe8d4;
+  background-color: #ebe8d4;
+}
+.sjtx .tab2 #rm .sjtxlt h4 img {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+.sjtx .tab2 #rm .sjtxlt ul {
+  width: 325px;
+  height: 180px;
+  padding-top: 10px;
+  background-color: #f3f1e5;
+}
+.sjtx .tab2 #rm .sjtxlt ul li {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  width: 140px;
+  color: #999999;
+}
+.sjtx .tab2 #rm .sjtxlt ul li:nth-of-type(odd) {
+  margin-left: 40px;
+}
+.sjtx .tab2 #rm .sjtxlt ul li:nth-of-type(1),
+.sjtx .tab2 #rm .sjtxlt ul li:nth-of-type(2),
+.sjtx .tab2 #rm .sjtxlt ul li:nth-of-type(3),
+.sjtx .tab2 #rm .sjtxlt ul li:nth-of-type(4) {
+  font-weight: bold;
+  color: #000;
+}
+.sjtx .tab2 #rm .sjtxct {
+  float: left;
+  width: 440px;
+  height: 475px;
+  position: relative;
+}
+.sjtx .tab2 #rm .sjtxct dl {
+  float: left;
+  position: relative;
+  border: 1px solid #ededed;
+  border-collapse: collapse;
+  height: 234px;
+  width: 216px;
+}
+.sjtx .tab2 #rm .sjtxct dl dt {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+}
+.sjtx .tab2 #rm .sjtxct dl dd {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.sjtx .tab2 #rm .sjtxct dl dd:first-of-type {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.sjtx .tab2 #rm .sjtxct dl dd:nth-of-type(2) {
+  margin-top: 5%;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  position: relative;
+  z-index: 3;
+}
+.sjtx .tab2 #rm .sjtxct dl:first-of-type {
+  width: 438px;
+  background-color: #eaeaea;
+}
+.sjtx .tab2 #rm .sjtxct div {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 200px;
+  left: 150px;
+}
+.sjtx .tab2 #rm .sjtxct div span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 5px;
+  margin: 6px;
+  background-color: red;
+}
+.sjtx .tab2 #rm .sjtxct div span:hover {
+  background-color: #2cd10b;
+}
+.sjtx .tab2 #rm .sjtxrt {
+  float: left;
+  width: 440px;
+  height: 475px;
+}
+.sjtx .tab2 #rm .sjtxrt dl {
+  float: left;
+  position: relative;
+  border: 1px solid #ededed;
+  border-collapse: collapse;
+  width: 216px;
+  height: 115px;
+}
+.sjtx .tab2 #rm .sjtxrt dl dt {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+}
+.sjtx .tab2 #rm .sjtxrt dl dd {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.sjtx .tab2 #rm .sjtxrt dl dd:first-of-type {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.sjtx .tab2 #rm .sjtxrt dl dd:nth-of-type(2) {
+  margin-top: 5%;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  position: relative;
+  z-index: 3;
+}
+.sjtx .tab2 #rm .sjtxrt dl:nth-of-type(5),
+.sjtx .tab2 #rm .sjtxrt dl:nth-of-type(6) {
+  height: 234px;
+}
+.sjtx > img {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  margin-top: 10px;
+}
+.sjtx:nth-of-type(2) .tab2 #rm .sjtxlt dl,
+.sjtx:nth-of-type(3) .tab2 #rm .sjtxlt dl {
+  background-color: #b2c7dc;
+}
+.sjtx:nth-of-type(2) .tab2 #rm .sjtxlt h4,
+.sjtx:nth-of-type(3) .tab2 #rm .sjtxlt h4 {
+  background-color: #dee7f0;
+}
+.sjtx:nth-of-type(2) .tab2 #rm .sjtxlt ul,
+.sjtx:nth-of-type(3) .tab2 #rm .sjtxlt ul {
+  background-color: #e6edf3;
+}
+.com_width {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+}
+.mr {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+span {
+  color: red;
+}
+#fot {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+  border: 1px;
+}
+#fot .jrsd {
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+  height: 325px;
+}
+#fot .jrsd h5 p:last-of-type {
+  float: right;
+  margin-right: 90px;
+  border: 0px;
+}
+#fot .jrsd h5 p:last-of-type a:hover {
+  border: 0px;
+}
+#fot .jrsd > dl {
+  float: left;
+  width: 238px;
+  height: 283px;
+  text-align: center;
+}
+#fot .jrsd > dl dt {
+  float: left;
+  width: 238px;
+  height: 195px;
+}
+#fot .jrsd > dl dd {
+  float: left;
+  width: 238px;
+  line-height: 25px;
+}
+#fot .jrsd .ccdd {
+  float: left;
+  width: 700px;
+  height: 283px;
+}
+#fot .jrsd .ccdd dl {
+  float: left;
+  width: 225px;
+  height: 135px;
+}
+#fot .jrsd .ccdd dl dt {
+  float: left;
+  width: 110px;
+  height: 135px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+#fot .jrsd .ccdd dl dd {
+  float: left;
+  width: 100px;
+  margin-top: 20px;
+}
+#fot .jrsd .ssdd {
+  float: left;
+  width: 300px;
+  height: 283px;
+}
+#fot .jrsd .ssdd dl {
+  width: 300px;
+  height: 135px;
+}
+#fot .jrsd .ssdd dl dt {
+  float: left;
+  width: 100px;
+  height: 135px;
+  line-height: 135px;
+}
+#fot .jrsd .ssdd dl dd {
+  float: left;
+  width: 150px;
+  margin-top: 20px;
+}
+#fot .jrsd .ssdd dl dd p {
+  overflow: hidden;
+  text-overflow: ellipses;
+  white-space: nowrap;
+}
+#fot h1 {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+  height: 95px;
+  line-height: 95px;
+  background-color: #f5f5f5;
+  display: inline-block;
+  text-align: center;
+}
+#fot h1 p {
+  float: left;
+  margin: 0px 40px;
+}
+#fot h1 p:first-of-type {
+  margin-left: 150px;
+}
+#fot .dzn {
+  width: 1263px;
+  font-size: 12px;
+  margin: 0 auto;
+  height: 150px;
+  width: 1213px;
+  margin: 0px 20px 10px 30px;
+}
+#fot .dzn div {
+  height: 150px;
+}
+#fot .dzn div:last-of-type {
+  width: 180px;
+  height: 60px;
+  padding: 20px;
+  float: left;
+}
+#fot .dzn div:last-of-type h6 {
+  font-size: 14px;
+  font-weight: bold;
+}
+#fot .dzn div:last-of-type p {
+  font-size: 12px;
+}
+#fot .dzn div:last-of-type a {
+  text-align: right;
+}
+#fot .dzn div:first-of-type {
+  float: left;
+  width: 900px;
+}
+#fot .dzn div:first-of-type ul {
+  float: left;
+  margin-top: 20px;
+  width: 180px;
+}
+#fot .dzn div:first-of-type ul li:first-of-type {
+  font-size: 14px;
+  font-weight: bold;
+}
+#fot .ddd {
+  text-align: center;
+}
+#fot .ddd p {
+  margin-top: 20px;
+  line-height: 25px;
+}
+#fot .ddd p a {
+  padding: 0px 5px;
+  border-right: 1px solid #eee;
+}
+#fot .ddd p a:last-of-type {
+  border-right: 0px;
+}
+#fot .ddd div {
+  width: 900px;
+  height: 70px;
+  margin-left: 250px;
+  text-align: center;
+}
+#fot .ddd div dl {
+  float: left;
+  width: 140px;
+  height: 45px;
+  margin-right: 20px;
+  background-color: #eee;
+}
+#fot .ddd div dl dt {
+  float: left;
+  width: 40px;
+  height: 45px;
+  margin-top: 10px;
+}
+#fot .ddd div dl dd {
+  float: left;
+  margin-top: 10px;
+  width: 80px;
+}
