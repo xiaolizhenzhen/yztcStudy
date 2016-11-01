@@ -1,0 +1,76 @@
+*{padding: 0px;margin: 0px;}
+ul,li{list-style: none;}
+#box{width: 1000px;margin: 0 auto;}
+#box h3{width: 100%;background: #3e4147;height: 40px;line-height: 40px;color: #fff;font-size: 25px;padding: 0px 200px;}
+#box h3 p{float: left;}
+#box h3 .person{float: right;width: 25px;height: 25px;display: inline-block;position: relative;}
+#box h3 .person img{width: 25px;height: 25px;display: inline-block;}
+#admin{width: 180px;position: absolute;top: 40px;right: -80px;background: #eee;clear:both;text-align: center;padding:0px 10px;border:1px solid #220;display: none;z-index: 8;}
+#admin li{width: 180px;float: left;height: 30px;line-height: 30px;font-size: 14px;border-bottom: 1px solid #aaa;color:black;font-weight: normal;}
+#admin li:last-of-type{padding: 5px 0px;border-bottom: 0px;}
+#admin li h6{font-size: 20px;}
+#admin li>button{width: 80px;height: 25px;}
+
+
+
+#login{width: 1000px;height:100%;padding: 0px 200px;margin:0 auto;display: none;}
+#login>.login-div{width: 300px;height: 200px;background: #3e4147;margin: 200px auto;padding: 50px;}
+#login>.login-div p{display: block;line-height: 50px;color: #fff;font-size: 20px;}
+#login>.login-div p:first-of-type{font-size: 40px;color: #a71;font-weight: bold;margin-top: -30px;margin-left: -30px;padding-bottom:20px; }
+#login>.login-div p input{width: 200px;height: 30px;margin-left: 20px;border-radius: 5px;text-indent: 1em;}
+#login>.login-div p button{width: 80px;height: 40px;margin-left: 120px;margin-top: 30px;border-radius: 10px;background: #35a;color: #fff;font-size: 20px;}
+
+
+#logout{width: 1000px;height:100%;padding: 0px 200px;margin:0 auto;display: none;}
+#logout>.login-div{width: 300px;height: 200px;background: #3e4147;margin: 200px auto;padding: 50px;}
+#logout>.login-div>p{display: block;line-height: 200px;color: #fff;font-size: 20px;text-align: center;}
+
+
+#content{width: 1000px;padding: 0px 200px;height: 200px;line-height:200px;/*background: green;*/text-align: center;position: relative;display: none;}
+#btns{width: 1000px;/*background: yellow;*/}
+#btns>button{width:100px;height: 60px;background: #3e4147;color: #fff;font-size: 20px;vertical-align: middle;margin-right: 30px;}
+#btns>button:last-of-type{margin-right: 0px;}
+
+
+
+#main{width: 1000px;margin: 0 auto;/*background: orange;*/}
+#main table{width: 1000px;border:1px solid black;text-align: center;border-collapse: collapse;border-spacing: 0px;position: relative;margin-bottom: 100px;}
+#main table thead{background: #3e4147;color: #fff;}
+#main table tr{width: 100%;height: 30px;line-height: 30px;}
+#main table tbody tr:hover{background: green;}
+#main table tbody tr:hover span{color:#fff;}
+#main table tr td{line-height: 30px;border:1px solid #3e4147;}
+/*#main table tr td:first-of-type{width: 30px;}*/
+#main table tr td:nth-of-type(2){width: 50px;}
+#main table tr td:nth-of-type(5){width: 60px;}
+#main table tr td:last-of-type{width: 80px;}
+#main table tr td img{width: 25px;height: 25px;margin-top: 3px;}
+#main table tr td span{color: #06a;}
+#main table tr td span:hover{color: red;}
+
+
+#imgBox{width: 200px;height: 200px;position: absolute;background:#eee;z-index: 3;display: none;padding: 20px;border-radius: 10px;}
+#imgBox img{width: 200px;height: 200px;}
+
+
+
+#change{width: 100%;height:100%;padding: 0px 200px;margin: -200px auto;background: rgba(0,0,0,.5);position: relative;z-index: 5;display: none;}
+#change .AddAndModify{width: 500px;height: 400px;background: #eee;position: absolute;top:100px;left:450px;border-radius: 10px;padding:10px;position: fixed;top: 100px;left:250px;}
+#change .AddAndModify h5{width: 100%;height: 20px;line-height:20px;background: #6fe;padding: 10px;margin-left: -10px;margin-top: -10px;border-radius: 10px 10px 0px 0px;}
+#change .AddAndModify h5 p:first-of-type{float: left;font-size: 16px;}
+#change .AddAndModify h5 p:last-of-type{float:right;color: red;}
+#change .AddAndModify h5 p:last-of-type a{padding: 3px 5px;background: #aaa;}
+#change .AddAndModify ul{width: 100%;margin-top: 10px;text-align: center;position: relative;}
+#change .AddAndModify ul li{width: 240px;height:38px;line-height:38px;float: left; }
+#change .AddAndModify ul li:nth-of-type(odd){margin-right:10px;}
+#change .AddAndModify ul li span{width: 80px;font-size: 12px;float: left;display: inline-block;text-align: right;}
+#change .AddAndModify ul li input{height: 20px;width: 160px;float: right;margin-top: -28px;}
+#change .AddAndModify button{width: 80px;height: 30px;border-radius: 10px;background: #aaa;position: absolute;right: 60px;bottom:25px;}
+
+.fixedd{width: 30px;height: 120px;padding:10px;background: #6fe;border-radius: 0px 10px 10px 0px;font-size: 25px;color: #fff;text-align: center;}
+#addbook{position: fixed;top: 200px;left:0px;display: none;}
+#delcheck{position: fixed;bottom: 100px;left:0px;display: none;}
+#del{width: 200px;height: 140px;background: #eee;text-align: center;padding: 30px 50px;position: fixed;left:400px;top:300px;display: none; }
+#del h4{height: 80px;line-height: 80px;font-size: 25px;}
+#del h2{height: 60px;line-height: 60px;}
+#del h2 button{width: 60px;height:35px;}
