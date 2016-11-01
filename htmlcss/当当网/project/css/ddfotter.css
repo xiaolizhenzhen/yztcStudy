@@ -1,0 +1,8 @@
+@charset "utf-8";
+#fotter{width: 960px;height: 80px;text-align: center;}
+ul{width: 450px;height: 30px;margin-left: 290px;margin-top: 25px;}
+ul li{float: left;border-right:1px solid  #9b2b0f;}
+ul li:last-of-type{border-right:0px;}
+ul li a{color: #9b2b0f;padding: 0px 15px;}
+p{height: 45px;line-height: 45px;}
+p img{display: inline-block;vertical-align: middle;}
