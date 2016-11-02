@@ -1,12 +1,12 @@
 {
 	"author" : "xiaolizhenzhen",
-	"name" : "mytool",
+	"name" : "myutil",
 	"version" : "0.1.1",
-	"description" : "审查文档中的敏感词",
+	"description" : "我的工具箱",
 	"main" : "main",
 	"repository":{
 		"type":"git",
-		"url":"地址"
+		"url":"https://github.com/xiaolizhenzhen/yztcStudy/tree/master/mytool"
 	},
 	"keywords":[
 		"tool" , "print"
