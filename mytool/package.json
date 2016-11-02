@@ -1,0 +1,18 @@
+{
+	"author" : "xiaolizhenzhen",
+	"name" : "mytool",
+	"version" : "0.1.1",
+	"description" : "审查文档中的敏感词",
+	"main" : "main",
+	"repository":{
+		"type":"git",
+		"url":"地址"
+	},
+	"keywords":[
+		"tool" , "print"
+	],
+	"dependencies" : {},
+	"engines" : {
+		"node" : "*"
+	}
+}
