@@ -6,7 +6,7 @@
 	"main" : "main",
 	"repository":{
 		"type":"git",
-		"url":"https://github.com/xiaolizhenzhen/yztcStudy/tree/master/mytool"
+		"url":"https://github.com/xiaolizhenzhen/yztcStudy/tree/master/myutil"
 	},
 	"keywords":[
 		"tool" , "print"
