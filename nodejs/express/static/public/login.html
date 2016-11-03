@@ -20,32 +20,77 @@
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script>
 
+			//get
+		/*
 			jQuery(document).ready(function($) {
-				
 				$("button").click(function(e){
-					e.preventDefault();
+					e.preventDefault();//阻止默认事件
 					var uesrname = $("input:first").val();
 					var pwd = $("input:last").val();
 
-					$.ajax({
-						url: 'http://10.0.161.39:4000/login/'+uesrname+"/"+pwd,
+						//get
+						$.ajax({
+							url: 'http://10.0.161.39:4000/login/'+uesrname+"/"+pwd,
 
-						//如下的网址是跨服务器执行的链接地址
-						// url: 'http://10.0.161.39:9000/login/'+uesrname+"/"+pwd,
-						
-						type: 'GET',
-					})
-					.done(function(data) {
-						console.log(data);
-						if (data.statusCode == "yes") {
+							//如下的网址是跨服务器执行的链接地址
+							// url: 'http://10.0.161.39:9000/login/'+uesrname+"/"+pwd,
+							
+							type: 'GET',
+						})
+						.done(function(data) {
+							console.log(data);
+							if (data.statusCode == "yes") {
+								$("#osp").html(data.msg).css("color","green");
+							} else{
+								$("#osp").html(data.msg).css("color","red");
+							};
+						})
+				})
+			});
+		*/
+	
+			//post
+		
+			jQuery(document).ready(function($) {
+
+				function fn(data){
+					console.log(data+"static");
+					if (data.statusCode == "yes") {
 							$("#osp").html(data.msg).css("color","green");
 						} else{
 							$("#osp").html(data.msg).css("color","red");
 						};
-					})
+				}
 
+				$("button").click(function(e){
+					e.preventDefault();//阻止默认事件
+					var uesrname = $("input:first").val();
+					var pwd = $("input:last").val();
+
+					//post
+					var obj = {};
+					obj.uesrname = uesrname;
+					obj.pwd = pwd;
+
+					$.ajax({
+
+						// url: 'http://10.0.161.39:4000/login',
+
+						//跨域访问
+						url: 'http://10.0.161.39:9000/login',
+						type: 'post',
+						// data: obj,
+
+						//跨域访问传参类型
+						data: JSON.stringify(obj),
+						success:fn
+					})
+				
 				})
 			});
+		
+
+
 
 	</script>
 </html>

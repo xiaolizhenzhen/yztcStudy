@@ -1,18 +1,23 @@
 {
-	"author" : "xiaolizhenzhen",
-	"name" : "mytool__lz",
-	"version" : "0.1.1",
-	"description" : "我的工具箱",
-	"main" : "mytool__lz",
-	"repository":{
-		"type":"git",
-		"url":""
-	},
-	"keywords":[
-		"tool" , "print"
-	],
-	"dependencies" : {},
-	"engines" : {
-		"node" : "*"
-	}
+  "author": "xiaolizhenzhen",
+  "name": "mytool__lz",
+  "version": "0.1.1",
+  "description": "我的工具箱",
+  "main": "mytool__lz",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "tool",
+    "print"
+  ],
+  "dependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
 }

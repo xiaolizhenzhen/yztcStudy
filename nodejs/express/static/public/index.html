@@ -35,11 +35,11 @@
 				obj.password = $("input:eq(4)").val();
 				// console.log(obj);
 				$.ajax({
-					url: '/register'+obj,
+					url: 'http://10.0.161.39:4000/register/'+obj,
 					type: 'GET',
 				})
-				.done(function() {
-					console.log("success");
+				.done(function(data) {
+					console.log("success"+data);
 				})
 				.fail(function() {
 					console.log("error");
