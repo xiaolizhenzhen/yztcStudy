@@ -39,6 +39,7 @@ $(function(){
 			//console.log(userObj);
 			$.ajax({
 				url: baseUrl+"/users/login",
+				// url: baseUrl+"/users/login",
 				type: 'post',
 				data: userObj
 			})

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			ul,li{list-style: none;}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			
+		</div>
+		<form action="">
+			<ul>
+				<li>用户名：<input type="text" name="username1"></li>
+				<li>昵  称：<input type="text" name="username2"></li>
+				<li>邮  箱：<input type="email" name="email"></li>
+				<li>手机号：<input type="tel" name="tel"></li>
+				<li>密  码：<input type="password" name="password"></li>
+				<li><button>注册</button></li>
+			</ul>
+		</form>
+	</body>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script>
+
+		$(function(){
+			$("button").click(function(){
+				var obj = {};
+				obj.username1 = $("input:first").val();
+				obj.username2 = $("input:eq(1)").val();
+				obj.email = $("input:eq(2)").val();
+				obj.tel = $("input:eq(3)").val();
+				obj.password = $("input:eq(4)").val();
+				// console.log(obj);
+				$.ajax({
+					url: '/register'+obj,
+					type: 'GET',
+				})
+				.done(function() {
+					console.log("success");
+				})
+				.fail(function() {
+					console.log("error");
+				})
+
+			})
+		})
+		
+
+	</script>
+</html>
