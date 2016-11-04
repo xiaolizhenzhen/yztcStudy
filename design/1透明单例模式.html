@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>透明单例模式</title>
+		<style type="text/css" media="screen">
+			ul,li{list-style: none;}
+			li{height: 30px;line-height: 30px;}
+		</style>
+	</head>
+	<body>
+		<div id="loginForm">
+		</div>
+		<div>
+			<button id="btn">登录</button>
+		</div>
+	</body>
+	<script>
+
+			//立即执行函数
+			var cd = (function(){
+
+				var instance = null;
+				//console.log(this+"1"); //window
+				function CreateDiv(html){
+					//console.log(instance);
+					if (instance) {
+						//如果存在，返回当前值
+						return instance;
+					} 
+					console.log(this+"2");
+					//如果不存在，创建，并赋值
+					this.html = html;
+					this.init();
+
+					return instance = this;  //把新创建的返回当前this
+				}
+
+				CreateDiv.prototype.init = function(){
+					var div = document.createElement("div");
+					div.innerHTML = this.html;
+					document.getElementById("loginForm").appendChild(div);
+				}
+
+				return CreateDiv;
+			})()
+
+			var btn = document.getElementById("btn");
+			btn.addEventListener("click",function(){
+				new cd('<ul><li>用户名：<input type="text"></li><li>密&nbsp;码：<input type="password"></li></ul>');
+			})
+
+
+	</script>
+</html>

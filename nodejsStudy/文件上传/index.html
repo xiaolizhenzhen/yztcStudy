@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <title>登录页</title>
+        
+    </head>
+    <body> 
+    	<!-- 文件上传默认值  application/x-www-form-urlencoded -->
+   		<form action="/upload" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+	    	<input type="text" name="user" placeholder="输入用户名">
+	    	<input type="file" name="file1" placeholder="上传文件1">
+	    	<input type="file" name="file2" placeholder="上传文件2">
+
+
+	        <input type="submit"  value="提交">
+    	</form>
+        
+
+    </body>
+    <script type="text/javascript" src="jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+
+    //数组扩展原型    求取最大值
+
+    /*
+        Array.prototype.max = function(){
+            return this.sort(function(a,b){
+                return b - a
+            })[0];
+        }
+
+        var arr = [1,2,3,4,45,9,77];
+        console.log(arr.max());
+
+    */
+
+    /*
+        Array.prototype.max2 = function(){
+           var maxNum = 0;
+           for(var i = 1; i < this.length; i++){
+            if (this[i] > this[i-1]) {
+                maxNum = this[i];
+            } 
+           }
+           return maxNum;
+        }
+
+        var arr = [1,2,3,4,45,9,77];
+        console.log(arr.max2());
+
+    */
+
+
+
+    //call 和 apply 的区别
+    //注意this的指向问题
+    //this的指向
+
+    /*
+        var a = 20;
+        var obj = {
+            a : "10",
+            test : function(){
+                alert(this.a);
+                console.log(this);
+            }
+        }
+        var obj2 = {
+            a : 30
+        }
+        obj.test();//10  this指向当前对象
+        obj.test.call(this,null);//20   this == window
+        obj.test.call(obj2,null);//30  this指向当前obj2对象  
+
+        function aa(){
+            alert(this.a);  
+        }
+        aa();//20   this == window
+
+    */
+
+    /*
+
+        function  test(b){
+            let b = 20;
+            alert(b);
+        }
+
+        var a = 10;
+        test(a);
+
+    */
+
+        function show(i){ 
+            var a = i;
+            function inner(){ 
+                a = 10; 
+                alert(a); //10
+            }
+             inner(); 
+             alert(a);  //10
+        }
+        var a = 0; 
+        show(5); 
+        alert(a); //0
+    </script>
+   
+</html>

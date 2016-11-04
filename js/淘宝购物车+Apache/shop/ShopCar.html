@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <title>购物车页面</title>
+        <style type="text/css" media="screen">
+        	*{padding: 0;margin: 0;}
+        	a{text-decoration: none;}
+        	a:hover{text-decoration: underline;};
+        	ul,ol,li{list-style: none;}
+			
+			
+			table {width: 500px;margin: 200px auto; padding:50px;border: 1px solid #000;background: #eee;}
+			table thead tr{height: 50px;width: 500px;}
+			table tbody tr{font-size: 0px;border: 1px solid #aaa;text-align: center;}
+			table tbody tr td{padding: 0px 10px;height: 50px;line-height: 50px;font-size: 14px; border: 1px solid #aaa;}
+			table tbody tr td:first-of-type{width: 80px;height: 50px;}
+			table tbody tr td:first-of-type img{width: 80px;height: 50px;margin-top: 12px;}
+			table tbody tr td:nth-of-type(2){width: 120px;text-overflow:ellipsis;white-space: nowrap;overflow: hidden;text-align: left;}
+			table tbody tr td:nth-of-type(2) a{color: #000;}
+			table tbody tr td:nth-of-type(3){width: 80px;}
+			table tbody tr td:nth-of-type(4){width: 80px;}
+			/*table tbody tr td:nth-of-type(4) button{width: 20px;height: 20px;font-size: 10px;background: blue;color: #fff;border-radius: 5px;display: inline-block;}*/
+			.input{width: 20px;height: 20px;border-radius: 5px;text-align: center;margin-top: 30px;}
+			table tbody tr td:nth-of-type(5){width: 80px;}
+			table tbody tr td:nth-of-type(6){width:50px;font-size: 30px;font-weight: bold;}
+            div{width: 400px;height:50px;background: yellow; margin-left: 450px;font-size: 16px;}
+            div>button{width: 80px;height: 50px;background: blue;color: #fff;border-radius: 5px;}
+            #money{margin-left: 35px;}
+
+
+
+        </style>
+    </head>
+    <body>
+		<table >
+			<thead>
+				<tr>
+					<th colspan="2">商品名称</th>
+					<th>商品单价</th>
+					<th>数量</th>
+					<th>总价</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- <tr>
+					<td><img src="img/0.jpg" alt=""></td>
+					<td><a href="#">李宁男子远动鞋男鞋远李宁男子远动鞋男鞋远李宁男子远动鞋男鞋远</a></td>
+					<td>￥150.00</td>
+					<td>
+						//<button>-</button>
+ 						<input type="text" value="1" readonly="readonly">
+ 						//<button>+</button>
+ 					</td>
+ 					<td>￥150.00</td>
+ 					<td>X</td>
+				</tr> --> 
+			</tbody>
+		</table>
+        <div >
+            <button id="goShopping">继续购物</button>
+            总价：￥<span id="sum">0</span>元
+            <button id="money">结算</button>
+        </div>
+    </body>
+        <script type="text/javascript" src="jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript">
+            $(function(){
+
+                //点击继续购物，返回到购物页面
+                $("#goShopping").click(function(){
+                    window.open("taobao.html");
+                })
+
+                //点击结算
+                $("#money").click(function(){
+                    alert("付款成功！感谢您的光临*^_^*");
+                    window.open("taobao.html");
+                    var userID = Cookie.getCookie("user");
+                    var otr = $("tbody tr");
+                    console.log(otr.length);
+                    for(var i = 0; i < otr.length; i++){
+                        var itemID = $("tbody").children(otr[i]).attr("itemID");
+                        $.ajax({
+                            url : "php/car.php",
+                            data : {
+                                userID : userID,
+                                type : "del",
+                                itemID : itemID
+                            },
+                            success : function(res){
+                                res = $.parseJSON(res);
+                                console.log(res);
+                            }
+                        }) 
+                    }
+                    
+                    $("tbody").empty(); 
+                    return $("#sum").html("0");
+                })
+
+                var user = Cookie.getCookie("user");
+                $.ajax({
+                    url : "php/car.php",
+                    data : {
+                        type : "get",
+                        userID : user
+                    },
+                    success : function(res){
+                        res = $.parseJSON(res);
+                        for(var i = 0; i < res.length; i++){
+                            var obj = res[i];
+                            createDom(obj);
+                        }
+
+                        //计算总金额
+                        sumMony();
+                    }
+                })
+
+            })
+           
+
+            //通过获取的数据，添加到当前页面的表格中
+            function  createDom(obj){
+            /*
+                <tr>
+                    <td><img src="img/0.jpg" alt=""></td>
+                    <td><a href="#">李宁男子远动鞋男鞋远李宁男子远动鞋男鞋远李宁男子远动鞋男鞋远</a></td>
+                    <td>￥150.00</td>
+                    <td>
+                        <!-- <button>-</button> -->
+                        <input type="text" value="1" readonly="readonly">
+                        <!-- <button>+</button> -->
+                    </td>
+                    <td>￥150.00</td>
+                    <td>X</td>
+                </tr>
+            */
+                var tr = $("<tr/>").attr("itemID",obj.id);
+                var del = $("<td/>").html("X");
+
+                del.click(function(itemID){ 
+
+                    var userID = Cookie.getCookie("user");
+                    var itemID = $(this).parent().attr("itemID");
+                    console.log(userID);
+                    console.log(itemID);
+
+
+                    //删除数据库中的数据
+                    $.ajax({
+                        url : "php/car.php",
+                        data : {
+                            userID : userID,
+                            type : "del",
+                            itemID : itemID
+                        },
+                        success : function(res){
+                            res = $.parseJSON(res);
+                            console.log(res);
+                           
+                        }
+
+                    })
+
+                    $(this).parent().remove(); 
+                    sumMony();
+                /*
+                    var delmoy = parseInt($(this).prev().html());
+                    console.log(delmoy);
+                    SUM -= delmoy;
+                    return $("#sum").html(SUM);
+                */
+                })
+
+                tr.append(
+                    $('<td><img src="img/0.jpg" alt=""></td>')
+                ).append(
+                    $("<td/>").append(
+                        $("<a href='#'/>").html(obj.name)
+                    )   
+                ).append(
+                    $("<td/>").html("￥"+obj.price)
+                ).append(
+                    $('<input type="text" >').val(obj.count).addClass('input')
+                ).append(
+                    $("<td class='moy'/>").html(obj.price*obj.count)
+                ).append(
+                    del
+                )
+                $('tbody').append(tr);
+            }
+
+
+            function sumMony(){
+                //页面加载请求数据完成，计算总金额
+                var SUM = 0;
+                $(".moy").each(function(m,n){
+                   // console.log(m,parseInt($(n).html()));
+                    SUM += parseInt($(n).html())
+                })
+                //console.log(SUM);
+                return $("#sum").html(SUM);
+            }
+        </script>
+</html>

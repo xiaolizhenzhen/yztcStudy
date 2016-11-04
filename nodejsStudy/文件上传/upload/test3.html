@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+</head>
+<body>
+    <div id="test" diy="testDiy">
+        <span>这是内部的span内容</span>
+    </div>
+    <input type="checkBox" checked  name="" value="">
+</body>
+<script type="text/javascript" src = "jquery-1.11.1.js"></script>
+<script type="text/javascript">
+
+    //attr([String|Object],[,String]) 设置或获取指定元素的属性
+    //传入一个字符串参数时代表获取指定属性
+    //传入两个字符串参数时代表设置单个属性
+    //传入Object对象时，代表设置多个属性
+    console.log($("#test").attr("diy"));// testDiy  获取
+    $("#test").attr("diy2","diyTest2");//  设置元素属性
+    console.log($("#test").attr("diy2"));//diyTest2  获取
+    $("#test").attr({
+        d1:"d1",
+        d2:"d2"
+    })
+
+    //removeAttr(attrName) 移除指定属性 参数必须  无参不起作用
+    $("#test").removeAttr("d1");
+
+    //prop() / removeProp()
+    //在操作w3c规定的标签属性时 使用prop 其它自定义属性使用arrt()
+    console.log($("input").prop("checked"));//true
+    $("input").removeProp("checked");
+    console.log($("input").prop("checked"));//undefined
+
+
+
+/*
+    //html([str])  设置或获取元素的内部内容
+    //带标签
+    console.log($("#test").html());
+    $("#test").html("这是新设置的内容");
+    $("#test").html("<h1>这是新设置的内容</h1>");
+
+    //text() 获取元素的内部文字
+    //过滤标签
+    console.log($("#test").text());
+
+    //val()获取或设置表单元素的值
+    console.log($("input").eq(1).val());
+    //等同于
+    console.log($("input").eq(1).get(0).value);
+    //get(0)表示转换成原生DOM 里面带参数，根据情况而定
+    //传参即为设置value值
+    $("input").eq(1).val("jkhjkk"); 
+
+    function test(a1, a2, a3){
+        if (!a1) {
+            return "第一个参数是必须的";
+        }
+        a2 = a2 ? a2 : 0;
+        a3 = a3 ? a3 : 0;
+        return a1+a2+a3;
+    }
+    console.log(test());
+    console.log(test(10));
+    console.log(test(10,20,30));
+    
+    //API传参方式:
+    //程序员之间约定的，不是哪个机构规定的
+    //test(number[,number2][,number3]);
+    //这里中括号代表可以选填的参数 可选参数
+    //第一个参数必须有，并且必须是number类型的
+*/
+</script>
+</html>

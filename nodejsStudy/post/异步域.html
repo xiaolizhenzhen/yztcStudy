@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>异步域</title>
+    <meta charset="utf-8">
+     <!-- <script type="text/javascript" src="text.js" async></script>
+    // <script type="text/javascript" src="text1.js" async></script> -->
+    <script type="text/javascript" src="text.js" async defer></script>
+
+    <script type="text/javascript">
+    	alert("我是主页的原配JS");
+    </script>
+   <!--  // <script type="text/javascript" src="text.js"></script> -->
+</head>
+
+<body>
+	<div style="width:100px;height:100px;background:red;">
+		
+	</div>
+	    <!--  引入JS脚本是  async 与 defer 的区别
+
+	    	1、正常情况下script会按标签出现的先后顺序去加载或执行 
+	    	2、async 异步无顺序加载执行  即使按顺序写，也会按执行结束的顺序加载，即执行完即加载
+
+	    	3、defer等待页面DOM解析完成后异步加载  等同于把写了async的script放在了body后面 即页面加载完成之后执行
+
+	    -->
+</body>
+
+</html>

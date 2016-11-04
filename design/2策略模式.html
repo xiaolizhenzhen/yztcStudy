@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>设计模式</title>
+		<style type="text/css" media="screen">
+		</style>
+	</head>
+	<body>
+		
+	</body>
+	<script>
+
+		/*
+			策略模式：
+				把算法封装，用时可以互相替换
+				把函数抽离出来，用时调用
+
+			策略模式的组成：
+				策略的算法类(算法的封装)
+				环境类：选择算法的上下文(接收客户请求，把请求委托给某个算法来实现，即选择合适算法)
+
+
+			设计代码的宗旨：
+				对修改代码关闭，对扩展代码开放
+
+		*/
+
+		/*
+			//常规方式
+			//计算年终奖
+			var calcBounds = function(level,salary){
+				if(level === "s"){
+					return salary*4;
+				}
+				if (level === "a") {
+					return salary*3;
+				} 
+				if (level === "b") {
+					return salary*2;
+				}
+				
+			}
+
+			var  tom = {};
+			tom.name = "tom";
+			tom.salary = 30000;
+			tom.level = "s";
+
+			//计算tom的年终奖
+			var year = calcBounds(tom.level,tom.salary);
+			console.log(year);
+
+		*/
+
+		/*
+			//组合函数的方式对其进行重构
+			function performanceS(salary){
+				return salary*4;
+			}
+			function performanceA(salary){
+				return salary*3;
+			}
+			function performanceB(salary){
+				return salary*2;
+			}
+
+			var calcBounds = function(level,salary){
+				if (level === "s") {
+					return performanceS(salary);
+				} 
+				if (level === "a") {
+					return performanceA(salary);
+				} 
+				if (level === "b") {
+					return performanceB(salary);
+				} 
+			}
+
+			var  tom = {};
+			tom.name = "tom";
+			tom.salary = 30000;
+			tom.level = "s";
+
+			//计算tom的年终奖
+			var year = calcBounds(tom.level,tom.salary);
+			console.log(year);
+		*/
+
+		/*
+			//策略模式
+			//第一个组成部分：算法类
+			var performanceS = function(){};
+			performanceS.prototype.calcBounds = function(salary){
+				return salary*4;
+			}
+			var performanceA = function(){};
+			performanceA.prototype.calcBounds = function(salary){
+				return salary*3;
+			}
+			var performanceB = function(){};
+			performanceB.prototype.calcBounds = function(salary){
+				return salary*2;
+			}
+			var performanceC = function(){};
+			performanceC.prototype.calcBounds = function(salary){
+				return salary;
+			}
+
+			//第二个组成部分：环境类
+			//定义一个奖金类
+			var Bounds = function(salary,strategy){
+				this.salary = salary;
+				this.strategy = strategy;//策略
+			}
+			Bounds.prototype.setSalary = function(salary){
+				this.salary = salary;
+			}
+			Bounds.prototype.setStrategy = function(strategy){
+				this.strategy = strategy;
+			}
+			//计算奖金的方法
+			Bounds.prototype.getBounds = function(){
+				return this.strategy.prototype.calcBounds(this.salary);
+			}
+
+			//创建实例化对象
+			var myBounds = new Bounds(20000,performanceA);
+			console.log(myBounds.getBounds());
+			//修改数据设置之后
+			myBounds.setSalary(30000);
+			myBounds.setStrategy(performanceS);
+			console.log(myBounds.getBounds());
+			//修改数据设置之后
+			myBounds.setSalary(30000);
+			myBounds.setStrategy(performanceC);
+			console.log(myBounds.getBounds());
+		*/
+
+			//封装策略类  简洁，高效，可扩充
+			var stategies = {
+				"A":function(salary){
+					return salary*4;
+				},
+				"B":function(salary){
+					return salary*3;
+				}
+			}
+			stategies["C"] = function(salary){
+				return salary*2;
+			}
+
+			var calculatorBounds = function(level,salary){
+				return stategies[level](salary);
+			}
+
+			console.log(calculatorBounds("A",20000));
+			console.log(calculatorBounds("B",20000));
+			console.log(calculatorBounds("C",20000));
+
+
+
+	</script>
+</html>

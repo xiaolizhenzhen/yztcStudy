@@ -1,0 +1,64 @@
+/*
+	var http = require("http");
+	var url = require("url");
+
+	http.createServer(function(req,res){
+
+		res.writeHead(200,{
+			"Content-text" : "text/plain;charset=utf-8"
+		});
+
+		var pathname = url.parse(res.url).pathname;
+		if (pathname == "/") {
+			res.write("这是主页");
+			res.end();
+		} 
+
+	}).listen(8080);
+*/
+
+/*
+	module.exports = function(a){
+	   console.log(a+"模块");
+	}
+
+	var myModule = require("回顾.js");
+	myModule("啦啦啦");
+
+
+	exports.my = function(b){
+		console.log(b);
+	}
+	var myModule = require("回顾.js");
+	myModule.my("哈哈哈");
+
+
+	module.exports = {
+		c : 1,
+		d : function(){
+			console.log(this.c);
+		}
+	}
+	var myModule = require("回顾.js");
+	console.log(myModule.c);
+	myModule.d();
+*/
+
+
+fs 方法：
+fs.readFile();
+fs.readFileSync();
+
+fs.writeFile();
+fs.writeFileSync();
+
+url方法:
+url.parse();
+url.format();
+
+http方法：
+http.createServer();
+
+querystring方法：
+qs.parse();
+qs.stringify();
